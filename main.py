@@ -41,11 +41,10 @@ def dividir(a, b):
     return a / b
 
 # Função 5 - Calcula a média de uma lista de notas
-# 🐛 BUG: a divisão está usando o número errado
 def calcular_media(notas):
     """Recebe uma lista de notas e retorna a média."""
     total = sum(notas)
-    media = len(notas)  # BUG: deveria dividir por len(notas)
+    media = len(notas)
     return media
 
 
@@ -65,7 +64,7 @@ def par_ou_impar(numero):
 # 🐛 BUG: a condição de aprovação está errada
 def verificar_aprovacao(media):
     """Retorna True se o aluno foi aprovado (média >= 6)."""
-    if media >= 9:  # BUG: deveria ser >= 6
+    if media >= 6:  # BUG: deveria ser >= 6
         return True
     else:
         return False
